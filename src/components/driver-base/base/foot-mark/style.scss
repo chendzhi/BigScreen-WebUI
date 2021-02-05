@@ -1,0 +1,99 @@
+ul {margin: 0; padding: 0; list-style: none;}
+li {list-style: none;}
+
+.map-tooltip-footmark {
+  display: flex;
+  flex-direction: column;
+  padding: 7px;
+  max-height: 240px;
+  width: 315px;
+  background-image: url('./imgs/tooltip-box.png');
+  background-repeat: no-repeat;
+  background-size: 322px 100%;
+  background-color: transparent!important;
+
+  &_head {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding: 0 10px;
+    height: 46px;
+    line-height: 46px;
+    color: #0ce4ee;
+    &_title {
+      font-size: 16px;
+    }
+    &_more {
+      font-size: 14px;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -1px;
+      right: 10px;
+      left: 10px;
+      border-top: 1px dashed #0ce4ee;
+    }
+  }
+
+  &_body {
+    flex-grow: 1;
+    border: 10px solid transparent;
+    overflow: auto;
+    .article-list {
+      font-size: 14px;
+      li {
+        .article {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 10px;
+          width: 100%;
+          line-height: 23px;
+          color: #fff;
+          &:hover {
+            // color: #0ce4ee;
+            text-decoration: underline;
+          }
+          .article_title {
+            flex-grow: 1;
+            white-space: normal;
+          }
+          .article_pubtime {
+            flex-grow: 0;
+            flex-shrink: 0;
+            margin-left: 10px;
+            width: 43px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.el-dropdown-menu-footmark {
+  width: 88px;
+  background-color: #2b8de5;
+  border-color:#2b8de5;
+  border-radius: 2px;
+  &.el-dropdown-menu--mini .el-dropdown-menu__item {
+    text-align: center;
+    color: #fff;
+    &:not(.is-disabled):hover, &:focus {
+      background-color: rgba(255,255,255,.2);
+    }
+  }
+  &.el-popper[x-placement^="bottom"] .popper__arrow {
+    border-bottom-color: #2b8de5;
+      &::after {
+      border-bottom-color: #2b8de5;
+    }
+  }
+  &.el-popper[x-placement^="top"] .popper__arrow {
+    border-top-color: #2b8de5;
+      &::after {
+      border-top-color: #2b8de5;
+    }
+  }
+}

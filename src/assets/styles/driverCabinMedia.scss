@@ -1,0 +1,413 @@
+.show-xs {
+  display: none;
+}
+@media (max-width: 1366.98px) {
+  // .72
+  .content-wrap-slide {
+    padding: 15px;
+  }
+  .driver-box .driver-header-box {
+    height: 72px;
+    background-position-y: 20px;
+  }
+  .el-row-wrapper {
+    height: calc(100vh - 85px);
+  }
+  .sys-title {
+    font-size: 34px;
+    line-height: 72px;
+  }
+  .header-btn-wrap {
+    top: 14px;
+  }
+  .map-customization {
+    width: 76px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 14px;
+  }
+  .block-title {
+    height: 44px;
+    line-height: 32px;
+    font-size: 18px;
+  }
+  .xietong-block .block-bg {
+    height: calc(100% - 44px);
+  }
+  .chuandi-tit {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  .article-ul {
+    .article-ul-li {
+      .text-info {
+        font-size: 14px;
+        line-height: 22px;
+      }
+      .text-info-content {
+        padding-bottom: 10px;
+      }
+      .article-ul-li-date {
+        font-size: 12px;
+      }
+      .article-ul-li-chart {
+        height: 70px;
+      }
+    }
+  }
+  .xietong-block {
+    padding-top: 10px;
+  }
+  .xietongfasheng-chart {
+    padding-top: 15px;
+    height: calc(100% - 50px);
+  }
+  .attent-rank {
+    font-size: 12px;
+  }
+  .attent-rank-num {
+    font-size: 18px;
+  }
+  .map-content {
+    height: 65%;
+    padding: 0 15px;
+  }
+  .meeting-content {
+    margin: 0 15px;
+    height: 35%;
+  }
+  .map-title-content {
+    padding-top: 15px;
+  }
+  .map-title {
+    width: 118px;
+    font-size: 16px;
+    height: 30px;
+    line-height: 34px;
+  }
+
+  .map-attention-title {
+    margin-right: 10px;
+  }
+  .leader-select {
+    width: 220px;
+    &_head {
+      padding: 0 10px;
+      height: 30px;
+      &_left {
+        .leader-avatar {
+          width: 25px;
+          height: 25px;
+        }
+      }
+      &_split-line {
+        height: 15px;
+      }
+      &_right {
+        line-height: 30px;
+        .leader-select_dropdown-icon {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .map-title-china-filed {
+    margin-top: 14px;
+  }
+  .map-title-btn-wrap {
+    cursor: pointer;
+    margin-right: 7px;
+  }
+  .map-title-icon {
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+  }
+  .map-title-btn {
+    font-size: 14px;
+  }
+  .attention-dialog-pop {
+    top: 30px;
+    width: 170px;
+    margin-left: -85px;
+  }
+
+  .attention-close-wrap {
+    .icon {
+      height: 20px;
+      width: 20px;
+      line-height: 20px;
+    }
+  }
+  .attention-btn {
+    font-size: 14px;
+    padding: 5px 0;
+  }
+  .member-dialog-province {
+    top: 26px;
+  }
+  .member-close-wrap {
+    padding: 15px 26px 0;
+    .icon {
+      width: 16px;
+      height: 16px;
+      line-height: 16px;
+      font-size: 12px;
+      background-color: #3995cc;
+      color: #2340a7;
+    }
+  }
+  .member-wrap {
+    padding: 0 25px;
+  }
+  .member-card {
+    margin-bottom: 12px;
+  }
+  .member-term-card {
+    .member-card {
+      width: 33.33%;
+    }
+  }
+  .member-img {
+    width: 40px;
+    height: 40px;
+  }
+  .member-name {
+    font-size: 12px;
+    margin-top: 7px;
+  }
+  .member-title {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+  .map-area {
+    height: calc(100% - 135px);
+  }
+  .map-field {
+    padding: 10px;
+  }
+  .mounth-wrap {
+    margin-top: 7px;
+  }
+  .map-select {
+    width: 80px;
+    .el-input--small .el-input__inner {
+      height: 22px;
+      font-size: 12px;
+      line-height: 22px;
+    }
+    .el-icon-arrow-up {
+      line-height: 20px;
+    }
+  }
+  .mounth-btn {
+    width: 30px;
+    height: 22px;
+    line-height: 22px;
+  }
+  .meeting-title-wrap {
+    height: 30px;
+  }
+  .meeting-bgs {
+    left: 50%;
+    top: -18px;
+    margin-left: -166px;
+    width: 400px;
+    height: 44px;
+  }
+  .meeting-tab-title {
+    line-height: 34px;
+    font-size: 18px;
+  }
+  .meeting-btns {
+    top: 10px;
+  }
+  .meet-more {
+    margin-left: 10px;
+  }
+  .meet-high-word {
+    right: -50px;
+    top: 5px;
+    font-size: 14px;
+  }
+
+  .meet-word {
+    font-size: 13px;
+    margin-top: 10px;
+  }
+  .meet-counts {
+    margin-top: 10px;
+    font-size: 28px;
+  }
+  .meet-name {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  .meet-unit {
+    font-size: 12px;
+  }
+  .block-tab-word {
+    font-size: 16px;
+  }
+  .baixingguanzhu-content {
+    padding-top: 14px;
+  }
+  .peopleAttention-ul-title .peopleAttention-li-title span {
+    font-size: 14px;
+  }
+  .peopleAttention-ul .peopleAttention-li {
+    height: 30px;
+    line-height: 30px;
+  }
+  .peopleAttention-ul .peopleAttention-li span {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1200.98px) {
+  // .625
+  .content-wrap-slide {
+    padding: 10px;
+  }
+  .driver-box .driver-header-box {
+    height: 62px;
+    background-position-y: 18px;
+  }
+  .sys-title {
+    font-size: 30px;
+    line-height: 62px;
+  }
+  .header-btn-wrap {
+    top: 10px;
+  }
+  .map-customization {
+    width: 60px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 992.98px) {
+  // .52
+  // .sm-xs-hide {
+  //   display: none;
+  // }
+  .word-ellipsis-1 {
+    -webkit-box-orient: initial !important;
+  }
+  .driver-main-box {
+    margin-top: 15px;
+  }
+  .driver-box {
+    height: auto;
+  }
+  .el-row-wrapper {
+    display: block;
+    height: auto;
+  }
+  .driver-main-box .content-wrap {
+    height: auto;
+    margin-bottom: 10px;
+  }
+  .driver-box .driver-header-box {
+    height: 72px;
+    background-position-y: 48px;
+  }
+  .sys-title {
+    font-size: 30px;
+    line-height: 72px;
+  }
+  .header-btn-wrap {
+    top: 10px;
+    display: block !important;
+  }
+  .map-area {
+    height: 750px;
+  }
+  .map-customization {
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    margin: 0 0 8px 0;
+  }
+  .article-ul .article-ul-li .article-ul-li-chart {
+    height: 90px;
+  }
+  .xietongfasheng-chart {
+    height: 270px;
+  }
+  .map-content {
+    min-height: 450px;
+  }
+  .meeting-content {
+    margin: 0;
+  }
+  .meeting-chart {
+    height: 170px;
+  }
+  .action-block,
+  .mail-block,
+  .baixingguanzhu-block {
+    height: 190px;
+  }
+}
+@media (max-width: 768.98px) {
+  // .xs-icon {
+  //   margin-left: 5px;
+  //   width: 28px;
+  //   height: 28px;
+  //   background-repeat: no-repeat;
+  //   background-size: 100% 100%;
+  //   border-radius: 50%;
+  //   cursor: pointer;
+  // }
+  .map-title {
+    width: 105px;
+    height: 26px;
+    font-size: 14px;
+    line-height: 28px;
+  }
+  .driver-box .driver-header-box {
+    background-position-y: 54px;
+  }
+  .hide-xs {
+    display: none;
+  }
+  .show-xs {
+    display: block;
+  }
+  .sys-title {
+    font-size: 18px;
+    line-height: 72px;
+  }
+  .xietongfasheng-chart {
+    padding-top: 30px;
+  }
+  // .right-btn {
+  //   display: none !important;
+  // }
+  .leader-select {
+    .member-dialog-province {
+      left: auto;
+      right: -45px;
+      transform: translateX(0);
+    }
+  }
+  .quanguo-btn {
+    top: 5px;
+  }
+  .header-btn-wrap {
+    top: 7px;
+  }
+  .meet-word {
+    font-size: 10px;
+  }
+  .mail-tab {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .leader-select_head_left .leader-avatar {
+      width: 19px;
+      height: 19px;
+      margin-right: 0px;
+  }
+}

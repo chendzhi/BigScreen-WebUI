@@ -1,0 +1,37 @@
+@function px2rem( $px ){
+  @return $px/16 + rem;
+}
+
+$designWidth : 414; //750 是设计稿的宽度，要根据设计稿的宽度填写。
+
+
+.tabmap{
+  //tab切换
+.el-tabs__header{
+  margin: 0 0 0 0;
+  position: absolute;
+  padding: px2rem(15) px2rem(0);
+}
+.el-tabs__active-bar{
+  background: none;
+  height: auto;
+}
+.el-tabs__nav-wrap::after{
+  background: none;
+  height: auto;
+}
+.el-tabs__item{
+  padding: 0;
+  margin-left: px2rem(15);
+  line-height: px2rem(35);
+  border-radius: 50%;
+  width: px2rem(35);
+  text-align: center;
+  height: px2rem(35);
+}
+.el-tabs__item.is-active{
+  background: #10578d;
+  color: #fff;
+}
+}
+

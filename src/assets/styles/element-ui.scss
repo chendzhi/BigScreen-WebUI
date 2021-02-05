@@ -1,0 +1,366 @@
+// cover some element-ui styles
+
+.el-breadcrumb__inner,
+.el-breadcrumb__inner a {
+  font-weight: 400 !important;
+}
+
+.el-upload {
+  input[type="file"] {
+    display: none !important;
+  }
+}
+
+.el-upload__input {
+  display: none;
+}
+
+.cell {
+  .el-tag {
+    margin-right: 0;
+  }
+}
+
+.small-padding {
+  .cell {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+.fixed-width {
+  .el-button--mini {
+    padding: 7px 10px;
+    width: 60px;
+  }
+}
+
+.status-col {
+  .cell {
+    padding: 0 10px;
+    text-align: center;
+
+    .el-tag {
+      margin-right: 0;
+    }
+  }
+}
+
+// to fixed https://github.com/ElemeFE/element/issues/2461
+.driver-dialog .el-dialog {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  margin: 0 !important;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(
+    to top left,
+    rgba(7, 35, 152, 0.9) 0%,
+    rgba(35, 109, 171, 0.9) 100%
+  );
+  .el-dialog__header {
+    padding: 0;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 15px;
+    background: rgba(13, 75, 169, 0.8);
+    box-shadow: 0 0 3px rgba(11, 228, 238, 0.5);
+    .el-dialog__title {
+      position: relative;
+      color: #0be4ee;
+      line-height: 100%;
+      font-size: 16px;
+    }
+    .el-dialog__headerbtn {
+      top: 8px;
+      height: 28px;
+      width: 28px;
+      line-height: 28px;
+      text-align: center;
+      background-color: #5399dc;
+      border-radius: 2px;
+      font-size: 18px;
+      .el-dialog__close {
+        color: #1a379e;
+      }
+    }
+  }
+}
+
+// refine element ui upload
+.upload-container {
+  .el-upload {
+    width: 100%;
+
+    .el-upload-dragger {
+      width: 100%;
+      height: 200px;
+    }
+  }
+}
+
+// dropdown
+.el-dropdown-menu {
+  a {
+    display: block;
+  }
+}
+
+// fix date-picker ui bug in filter-item
+.el-range-editor.el-input__inner {
+  display: inline-flex !important;
+}
+
+// .baixing-bg .el-dialog {
+//   background: url("../images/dirverCabin/baixing-bg.png");
+//   background-repeat: no-repeat;
+//   background-size: 100% 100%;
+// }
+
+// .baixing-bg .el-dialog__header .el-dialog__title,
+// .baixing-bg .el-dialog__headerbtn .el-dialog__close {
+//   color: #0be4ee;
+// }
+
+// .baixing-bg .el-dialog__header {
+//   padding: 20px;
+//   padding-bottom: 10px;
+//   position: relative;
+//   top: -12px;
+// }
+// .baixing-bg .el-dialog__body {
+//   padding-top: 20px;
+// }
+
+// //省长行动
+// .shengz-bg .el-dialog {
+//   background: url("../images/dirverCabin/action-bg.png");
+//   background-repeat: no-repeat;
+//   background-size: 100% 100%;
+//   background-position-y: 10px;
+// }
+
+// .shengz-bg .el-dialog__header .el-dialog__title,
+// .shengz-bg .el-dialog__headerbtn .el-dialog__close {
+//   color: #0be4ee;
+// }
+
+// // 百信来信弹窗
+
+// .baixing-dia-bg .el-dialog {
+//   background: url("../images/dirverCabin/action-bg.png");
+//   background-repeat: no-repeat;
+//   background-size: 100% 100%;
+//   background-position-y: 5px;
+// }
+
+// .baixing-dia-bg .el-dialog__header .el-dialog__title,
+// .baixing-dia-bg .el-dialog__headerbtn .el-dialog__close {
+//   color: #0be4ee;
+// }
+
+// .action-bg .el-dialog {
+//   background: url("../images/dirverCabin/action-bg.png");
+//   background-repeat: no-repeat;
+//   background-size: 100% 100%;
+//   background-position-y: 13px;
+// }
+// .action-bg .el-dialog__header .el-dialog__title,
+// .action-bg .el-dialog__headerbtn .el-dialog__close {
+//   color: #0be4ee;
+// }
+// .action-bg .el-dialog__headerbtn .el-dialog__close {
+//   margin-top: 3px;
+// }
+// // 修改密码弹窗
+// .passWord-dia-bg .el-dialog {
+//   background: url("../images/dirverCabin/passWord-dia-bg.png") no-repeat;
+//   background-position-y: 13px;
+// }
+.passWord-dia-bg .el-dialog__body {
+  padding: 30px 20px 0px;
+}
+.passWord-dia-bg .dialog-footer {
+  margin-left: 88px;
+  text-align: left;
+}
+.action-bg .dialog-footer .el-button,
+.action-bg .customization-dialog-footer .el-button {
+  font-size: 14px;
+}
+.action-bg .el-button--small,
+.action-bg .el-button--text {
+  padding: 7px 15px;
+}
+.action-bg .el-input__inner {
+  background: #051654;
+  border: 1px solid #03588e;
+  color: #0be4ee;
+}
+.action-bg .el-form-item.is-error .el-input__inner {
+  box-shadow: 0 1px 7px 0 rgba(255, 73, 2, 0.5);
+  border-color: #82382a;
+}
+.action-bg .el-form-item__error {
+  color: #82382a;
+}
+.action-bg
+  .el-form-item.is-required:not(.is-no-asterisk)
+  > .el-form-item__label:before {
+  color: #49a3ff;
+}
+.action-bg .el-form-item--small .el-form-item__label {
+  font-weight: 500;
+  color: #00d2ff;
+}
+.action-bg .el-button--primary {
+  background-color: #00d2ff;
+  color: #000;
+  border: none;
+}
+.action-bg .el-input__inner:focus {
+  box-shadow: 0 1px 7px 0 #0274aa;
+}
+.action-bg .el-button--text {
+  color: #fff;
+  background-color: rgba(11, 62, 158, 0.9);
+  border: 1px solid #042984;
+}
+.map-select {
+  position: relative;
+  top: -16px;
+}
+.map-select input {
+  background-color: transparent;
+  border: 1px solid #2b8de5;
+  color: #fff;
+  height: 30px;
+  font-size: 0.8vw;
+}
+.map-select .el-icon-arrow-up {
+  color: #2b8de5;
+  position: relative;
+  line-height: 30px;
+}
+.el-popper[x-placement^="bottom"] .popper__arrow::after {
+  border-bottom-color: #fff;
+}
+.report .el-carousel__container {
+  height: 100%;
+}
+
+// 政关注
+// .attention-bg .el-dialog {
+//   //background: url('../images/newDriverCabin/large-height.png');
+//   // background: url('../images/dirverCabin/action-bg.png');
+//   // background-repeat: no-repeat;
+//   // background-size: 100% 100%;
+//   // background-position-y: 10px;
+//   background: linear-gradient(
+//     to top left,
+//     rgba(12, 35, 128, 0.8) 0%,
+//     rgba(61, 156, 236, 0.8) 100%
+//   );
+// }
+
+// .attention-bg .el-dialog__header {
+//   padding: 0;
+//   height: 45px;
+//   line-height: 45px;
+//   padding: 0 15px;
+//   background: rgba(13, 75, 169, 0.8);
+//   box-shadow: 0 0 3px rgba(11, 228, 238, 0.5);
+//   .el-dialog__headerbtn {
+//     top: 8px;
+//     height: 28px;
+//     width: 28px;
+//     line-height: 28px;
+//     text-align: center;
+//     color: #1a379e;
+//     background-color: #5399dc;
+//     border-radius: 2px;
+//     font-size: 18px;
+//   }
+// }
+
+// .attention-bg .el-dialog__header .el-dialog__title,
+// .attention-bg .el-dialog__headerbtn .el-dialog__close {
+//   color: #8fe1ff;
+// }
+
+// .attention-dialog-wrap {
+//   height: 400px;
+// }
+
+// // 来信精选
+// .mail-bg .el-dialog {
+//   // background: url('../images/newDriverCabin/large-height.png');
+//   background: url("../images/dirverCabin/action-bg.png");
+//   background-repeat: no-repeat;
+//   background-size: 100% 100%;
+//   background-position-y: 10px;
+// }
+
+// .mail-bg .el-dialog__header .el-dialog__title,
+// .mail .el-dialog__headerbtn .el-dialog__close {
+//   color: #0be4ee;
+// }
+
+// .mail-dialog-wrap {
+//   height: 400px;
+// }
+
+// // 部委重点关注问题
+// .matter-bg .el-dialog {
+//   // background: url('../images/newDriverCabin/large-height.png');
+//   background: url("../images/dirverCabin/action-bg.png");
+//   background-repeat: no-repeat;
+//   background-size: 100% 100%;
+//   background-position-y: 10px;
+// }
+
+// .matter-bg .el-dialog__header .el-dialog__title,
+// .matter .el-dialog__headerbtn .el-dialog__close {
+//   color: #0be4ee;
+// }
+
+// .matter-dialog-wrap {
+//   height: 400px;
+// }
+
+// // 会议
+// .meeting-bg .el-dialog {
+//   // background: url('../images/newDriverCabin/large-height.png');
+//   background: url("../images/dirverCabin/action-bg.png");
+//   background-repeat: no-repeat;
+//   background-size: 100% 100%;
+//   background-position-y: 10px;
+// }
+
+// .meeting-bg .el-dialog__header .el-dialog__title,
+// .meeting .el-dialog__headerbtn .el-dialog__close {
+//   color: #0be4ee;
+// }
+
+// .meeting-dialog-wrap {
+//   height: 400px;
+// }
+
+// // 热词
+
+// .hotWordInside-bg .el-dialog {
+//   //  background: url('../images/newDriverCabin/large-height.png');
+//   background: url("../images/dirverCabin/action-bg.png");
+//   background-repeat: no-repeat;
+//   background-size: 100% 100%;
+//   background-position-y: 10px;
+// }
+
+// .hotWordInside-bg .el-dialog__header .el-dialog__title,
+// .hotWordInside .el-dialog__headerbtn .el-dialog__close {
+//   color: #0be4ee;
+// }
+
+// .hotWordInside-dialog-wrap {
+//   height: 400px;
+// }

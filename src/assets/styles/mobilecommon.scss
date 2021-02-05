@@ -1,0 +1,5 @@
+@function px2rem( $px ){
+  @return $px/16 + rem;
+}
+
+$designWidth : 414; //750 是设计稿的宽度，要根据设计稿的宽度填写。

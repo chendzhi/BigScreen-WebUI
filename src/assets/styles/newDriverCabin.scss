@@ -1,0 +1,267 @@
+@font-face {
+  font-family: fzFont;
+  src: url(../font/FZZZHONGJW.TTF);
+}
+.mt15 {
+  margin-top: 15px;
+}
+.txt-center {
+  text-align: center !important;
+}
+.sys-title {
+  font-family: fzFont;
+  text-align: center;
+  color: #4dc4f9;
+  background-image: linear-gradient(180deg, #51e9f3, #4ec6fd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 48px;
+  line-height: 100px;
+  font-weight: 500;
+}
+.tooltip-content {
+  width: 150px;
+}
+.article-ul {
+  margin: 0;
+  list-style: none;
+  padding-left: 0px;
+
+  .article-ul-li {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    color: rgb(255, 255, 255);
+    padding: 2% 0px;
+    font-size: 16px;
+    border-top: 1px dashed rgb(16, 86, 186);
+    &.article-ul-li2 {
+      line-height: 20px;
+      padding: 14px 0;
+    }
+    .activity-tag {
+      display: inline-block;
+      margin: 0 5px;
+      background-color: #e8e9ea;
+      text-align: center;
+      padding: 1px 3px;
+      transform: skewX(-15deg);
+      &::before {
+        content: "活动";
+        color: #15055b;
+        display: block;
+        transform: skewX(15deg);
+        font-size: 12px;
+        line-height: 12px;
+      }
+    }
+
+    .text-info {
+      font-size: 16px;
+      line-height: 30px;
+    }
+
+    .text-info-content {
+      position: relative;
+      padding-bottom: 15px;
+    }
+
+    .article-ul-li-date {
+      position: absolute;
+      right: 5px;
+      bottom: 0;
+      font-size: 14px;
+      line-height: 14px;
+      color: #e8e9ea;
+      opacity: 0.7;
+    }
+
+    .article-ul-li-chart {
+      height: 93px;
+    }
+  }
+
+  .article-ul-li-active {
+    color: #0ce4ee;
+  }
+}
+
+.chuandi-tit {
+  text-align: right;
+  color: rgb(12, 228, 238);
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.ministry-chart-wrap {
+  height: 80%;
+  // overflow: hidden;
+
+  .ministry-block {
+    height: 100%;
+    width: 50%;
+
+    .ministry-tit {
+      margin-top: 3%;
+      font-size: 1.2vw;
+      font-weight: 400;
+      color: #0be4ee;
+      text-align: center;
+      cursor: pointer;
+      height: 30px;
+      line-height: 30px;
+    }
+
+    .ministry-chart {
+      height: 80%;
+      width: 100%;
+    }
+  }
+}
+
+.border-right {
+  border-right: 1px solid rgb(16, 86, 186);
+}
+
+.chart-btn {
+  cursor: pointer;
+  height: 22px;
+  line-height: 22px;
+  width: 50px;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(11, 62, 158, 0.9);
+  border: 1px solid #042984;
+  font-size: 13px;
+  border-radius: 5px;
+  position: absolute;
+  right: 0px;
+  z-index: 1000;
+}
+
+.attention-ul {
+  list-style: none;
+  padding: 0px 15px 15px 15px;
+}
+
+.attention-ul-wrap {
+  border: 1px solid #0e4b94;
+  background-color: rgba(4, 41, 148, 0.7);
+  height: 356px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.attention-th {
+  text-align: center;
+  color: #50e0f6;
+  font-size: 14px;
+  border-bottom: 1px dashed #4f83d1;
+  height: 30px;
+  line-height: 30px;
+}
+
+.attention-td {
+  text-align: center;
+  color: #00d2ff;
+  font-size: 12px;
+  border-bottom: 1px dashed #4f83d1;
+  padding-top: 1px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.mail-tab {
+  color: #00d2ff;
+  font-size: 18px;
+  text-align: right;
+}
+
+.mail-label {
+  color: #00d2ff;
+  font-size: 14px;
+  text-align: right;
+}
+
+.mail-value {
+  color: #fff;
+  font-size: 14px;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.mail-content {
+  margin-left: 10px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #0b3c85;
+  border: 1px solid #0e4b94;
+  padding: 15px;
+  opacity: 0.8;
+  border-radius: 10px;
+  max-height: 120px;
+  overflow-y: auto;
+}
+
+.matter-line-chart {
+  height: 218px;
+  padding: 5px;
+}
+
+.matter-word {
+  height: 220px;
+  background: url("../images/newDriverCabin/wordcloudbg.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+.big-btn-bg {
+  background: url("../images/newDriverCabin/big-btn.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+.small-btn-bg {
+  background: url("../images/newDriverCabin/small-btn.png") no-repeat;
+  background-size: 100% 100%;
+}
+.province-member-bg {
+  background: url("../images/newDriverCabin/province-member.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+.dep-member-bg {
+  background: url("../images/newDriverCabin/dep-member.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+.gauge-wrap {
+  height: 85px;
+}
+.voice-line {
+  height: 1px;
+  background-color: #0e4b94;
+}
+.graph-wrap {
+  height: 400px;
+}
+
+.attent-rank {
+  color: #0ce4ee;
+  text-align: center;
+  font-size: 16px;
+}
+.attent-rank-num {
+  font-size: 24px;
+  color: #fbff00;
+  padding: 0 5px 1px 3px;
+  border-bottom: 1px solid #fbff00;
+}
+
+/*** 第三方样式重写 ***/
+.v-modal {
+  opacity: 0.3;
+}
+
+@import "./driverCabinMedia.scss";

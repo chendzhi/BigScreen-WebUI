@@ -1,0 +1,391 @@
+<template>
+  <div>
+    <div ref="chart1" class="test-charts"></div>
+
+    <div style="height:340px;width:300px;" class="province-member-bg">
+
+    </div>
+
+  </div>
+</template>
+
+<script>
+import echarts from "echarts";
+import "echarts/map/js/china.js";
+export default {
+  data() {
+    return {};
+  },
+  mounted() {
+    this.initChart();
+  },
+  methods: {
+    initChart() {
+      let chartDom = echarts.init(this.$refs.chart1);
+
+      var dataArr = [
+        {
+          value: 91,
+          name: "二级网站",
+        },
+      ];
+      var color = new echarts.graphic.LinearGradient(0, 0, 1, 0, [
+        {
+          offset: 0,
+          color: "#5CF9FE", // 0% 处的颜色
+        },
+        {
+          offset: 0.17,
+          color: "#468EFD", // 100% 处的颜色
+        },
+        {
+          offset: 0.9,
+          color: "#468EFD", // 100% 处的颜色
+        },
+        {
+          offset: 1,
+          color: "#5CF9FE", // 100% 处的颜色
+        },
+      ]);
+      var colorSet = [
+        [0.91, color],
+        [1, "#15337C"],
+      ];
+      var rich = {
+        white: {
+          fontSize: 10,
+          color: "#fff",
+          fontWeight: "500",
+          padding: [-50, 0, 0, 0],
+        },
+        bule: {
+          fontSize: 10,
+          fontFamily: "DINBold",
+          color: "#fff",
+          fontWeight: "700",
+          padding: [-50, 0, 0, 0],
+        },
+        radius: {
+          width: 60,
+          height: 25,
+          fontSize: 10,
+          color: "#fff",
+
+          textAlign: "center",
+        },
+        size: {
+          height: 20,
+          padding: [65, 0, 0, 0],
+        },
+      };
+      var option = {
+        backgroundColor: "#0E1327",
+        tooltip: {
+          formatter: "{a} <br/>{b} : {c}%",
+        },
+
+        series: [
+          {
+            //内圆
+            type: "pie",
+            radius: "85%",
+            center: ["50%", "50%"],
+            z: 0,
+            itemStyle: {
+              normal: {
+                color: new echarts.graphic.RadialGradient(
+                  0.5,
+                  0.5,
+                  1,
+                  [
+                    {
+                      offset: 0,
+                      color: "rgba(17,24,43,0)",
+                    },
+                    {
+                      offset: 0.5,
+                      // color: '#1E2B57'
+                      color: "rgba(28,42,91,.6)",
+                    },
+                    {
+                      offset: 1,
+                      color: "#141C33",
+                      // color:'rgba(17,24,43,0)'
+                    },
+                  ],
+                  false
+                ),
+                label: {
+                  show: false,
+                },
+                labelLine: {
+                  show: false,
+                },
+              },
+            },
+            hoverAnimation: false,
+            label: {
+              show: false,
+            },
+            tooltip: {
+              show: false,
+            },
+            data: [100],
+          },
+          {
+            type: "gauge",
+            name: "外层辅助",
+            radius: "74%",
+            startAngle: "225",
+            endAngle: "-45",
+            splitNumber: "100",
+            pointer: {
+              show: false,
+            },
+            detail: {
+              show: false,
+            },
+            data: [
+              {
+                value: 1,
+              },
+            ],
+            // data: [{value: 1, name: 90}],
+            title: {
+              show: true,
+              offsetCenter: [0, 30],
+              textStyle: {
+                color: "#fff",
+                fontStyle: "normal",
+                fontWeight: "normal",
+                fontFamily: "微软雅黑",
+                fontSize: 20,
+              },
+            },
+            axisLine: {
+              show: true,
+              lineStyle: {
+                color: [[1, "#00FFFF"]],
+                width: 2,
+                opacity: 1,
+              },
+            },
+            axisTick: {
+              show: false,
+            },
+            splitLine: {
+              show: true,
+              length: 20,
+              lineStyle: {
+                color: "#051932",
+                width: 0,
+                type: "solid",
+              },
+            },
+            axisLabel: {
+              show: false,
+            },
+          },
+
+          {
+            type: "gauge",
+            radius: "70%",
+            startAngle: "225",
+            endAngle: "-45",
+            pointer: {
+              show: false,
+            },
+            detail: {
+              formatter: function (value) {
+                var num = Math.round(value);
+                return (
+                  "{bule|" +
+                  num +
+                  "}{white|分}" +
+                  "{size|" +
+                  "}\n{radius|二级网站}"
+                );
+              },
+              rich: rich,
+              offsetCenter: ["0%", "-50%"],
+            },
+            data: dataArr,
+            title: {
+              show: false,
+            },
+            axisLine: {
+              show: true,
+              lineStyle: {
+                color: colorSet,
+                width: 5,
+                shadowOffsetX: 0,
+                shadowOffsetY: 0,
+                opacity: 1,
+              },
+            },
+            axisTick: {
+              show: false,
+            },
+            splitLine: {
+              show: false,
+              length: 25,
+              lineStyle: {
+                color: "#00377a",
+                width: 2,
+                type: "solid",
+              },
+            },
+            axisLabel: {
+              show: false,
+            },
+          },
+
+          {
+            name: "灰色内圈", //刻度背景
+            type: "gauge",
+            z: 2,
+            radius: "60%",
+            startAngle: "225",
+            endAngle: "-45",
+            //center: ["50%", "75%"], //整体的位置设置
+            axisLine: {
+              // 坐标轴线
+              lineStyle: {
+                // 属性lineStyle控制线条样式
+                color: [[1, "#018DFF"]],
+                width: 2,
+                opacity: 1, //刻度背景宽度
+              },
+            },
+            splitLine: {
+              show: false,
+            },
+            // data: [{
+            //     show: false,
+            //     value: '80'
+            // }], //作用不清楚
+            axisLabel: {
+              show: false,
+            },
+            pointer: {
+              show: false,
+            },
+            axisTick: {
+              show: false,
+            },
+            detail: {
+              show: 0,
+            },
+          },
+          {
+            name: "白色圈刻度",
+            type: "gauge",
+            radius: "60%",
+            startAngle: 225, //刻度起始
+            endAngle: -45, //刻度结束
+            z: 4,
+            axisTick: {
+              show: false,
+            },
+            splitLine: {
+              length: 5, //刻度节点线长度
+              lineStyle: {
+                width: 2,
+                color: "rgba(1,244,255, 0.9)",
+              }, //刻度节点线
+            },
+            axisLabel: {
+              color: "rgba(255,255,255,0)",
+              fontSize: 12,
+            }, //刻度节点文字颜色
+            pointer: {
+              show: false,
+            },
+            axisLine: {
+              lineStyle: {
+                opacity: 0,
+              },
+            },
+            detail: {
+              show: false,
+            },
+            data: [
+              {
+                value: 0,
+                name: "",
+              },
+            ],
+          },
+          {
+            //内圆
+            type: "pie",
+            radius: "56%",
+            center: ["50%", "50%"],
+            z: 1,
+            itemStyle: {
+              normal: {
+                color: new echarts.graphic.RadialGradient(
+                  0.5,
+                  0.5,
+                  0.8,
+                  [
+                    // {
+                    //   offset: 0,
+                    //   color: "#4978EC",
+                    // },
+                    // {
+                    //   offset: 0.5,
+                    //   color: "#1E2B57",
+                    // },
+                    // {
+                    //   offset: 1,
+                    //   color: "#141F3D",
+                    // },
+
+                    {
+                      offset: 0,
+                      color: "#261c89",
+                    },
+                    {
+                      offset: 0.5,
+                      color: "#261c89",
+                    },
+                    {
+                      offset: 1,
+                      color: "#261c89",
+                    },
+                  ],
+                  false
+                ),
+                label: {
+                  show: false,
+                },
+                labelLine: {
+                  show: false,
+                },
+              },
+            },
+            hoverAnimation: false,
+            label: {
+              show: false,
+            },
+            tooltip: {
+              show: false,
+            },
+            data: [100],
+          },
+        ],
+      };
+
+      chartDom.setOption(option);
+    },
+  },
+};
+</script>
+
+<style lang="scss" scoped>
+.test-charts {
+  height: 80px;
+  width: 80px;
+}
+</style>
